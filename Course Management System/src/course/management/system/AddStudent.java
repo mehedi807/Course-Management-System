@@ -7,7 +7,7 @@ import java.awt.event.*;
 
 public class AddStudent extends JFrame implements ActionListener{
     
-    JTextField tfname, tffname, tfaddress, tfphone, tfemail, tfx, tfxii, tfaadhar;
+    JTextField tfname, tffname, tfaddress, tfphone, tfemail, tfx, tfxii, tfnid;
     JLabel labelrollno;
     JDateChooser dcdob;
     JComboBox<String> cbcourse, cbbranch;
@@ -110,21 +110,21 @@ public class AddStudent extends JFrame implements ActionListener{
         tfxii.setBounds(200, 350, 150, 30);
         add(tfxii);
         
-        JLabel lblaadhar = new JLabel("NID Number");
-        lblaadhar.setBounds(400, 350, 200, 30);
-        lblaadhar.setFont(new Font("serif", Font.BOLD, 20));
-        add(lblaadhar);
+        JLabel lblnid = new JLabel("NID Number");
+        lblnid.setBounds(400, 350, 200, 30);
+        lblnid.setFont(new Font("serif", Font.BOLD, 20));
+        add(lblnid);
         
-        tfaadhar = new JTextField();
-        tfaadhar.setBounds(600, 350, 150, 30);
-        add(tfaadhar);
+        tfnid = new JTextField();
+        tfnid.setBounds(600, 350, 150, 30);
+        add(tfnid);
         
         JLabel lblcourse = new JLabel("Course");
         lblcourse.setBounds(50, 400, 200, 30);
         lblcourse.setFont(new Font("serif", Font.BOLD, 20));
         add(lblcourse);
         
-        String course[] = {"B.Tech", "BBA", "BCA", "Bsc", "Msc", "MBA", "MCA", "MCom", "MA", "BA"};
+        String course[] = {"B.Sc", "BBA", "BA", "MSC", "LLM", "MBA"};
         cbcourse = new JComboBox<>(course);
         cbcourse.setBounds(200, 400, 150, 30);
         cbcourse.setBackground(Color.WHITE);
@@ -135,7 +135,7 @@ public class AddStudent extends JFrame implements ActionListener{
         lblbranch.setFont(new Font("serif", Font.BOLD, 20));
         add(lblbranch);
         
-        String branch[] = {"Computer Science", "Electronics", "Mechanical", "Civil", "IT"};
+        String branch[] = {"Computer Science", "Textile", "EEE", "Civil", "English","Economics"};
         cbbranch = new JComboBox<>(branch);
         cbbranch.setBounds(600, 400, 150, 30);
         cbbranch.setBackground(Color.WHITE);

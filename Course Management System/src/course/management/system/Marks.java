@@ -18,13 +18,13 @@ public class Marks extends JFrame implements ActionListener {
         
         getContentPane().setBackground(Color.WHITE);
         
-        JLabel heading = new JLabel("Delhi Technical Univeristy");
-        heading.setBounds(100, 10, 500, 25);
-        heading.setFont(new Font("Tahoma", Font.BOLD, 20));
-        add(heading);
+        // JLabel heading = new JLabel("Delhi Technical Univeristy");
+        // heading.setBounds(100, 10, 500, 25);
+        // heading.setFont(new Font("Tahoma", Font.BOLD, 20));
+        // add(heading);
         
-        JLabel subheading = new JLabel("Result of Examination 2022");
-        subheading.setBounds(100, 50, 500, 20);
+        JLabel subheading = new JLabel("Result of Examination");
+        subheading.setBounds(120, 50, 500, 20);
         subheading.setFont(new Font("Tahoma", Font.BOLD, 18));
         add(subheading);
         

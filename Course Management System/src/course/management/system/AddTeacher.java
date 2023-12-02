@@ -7,7 +7,7 @@ import java.awt.event.*;
 
 public class AddTeacher extends JFrame implements ActionListener{
     
-    JTextField tfname, tffname, tfaddress, tfphone, tfemail, tfx, tfxii, tfaadhar;
+    JTextField tfname, tffname, tfaddress, tfphone, tfemail, tfx, tfxii, tfnid;
     JLabel labelempId;
     JDateChooser dcdob;
     JComboBox<String> cbcourse, cbbranch;
@@ -92,7 +92,7 @@ public class AddTeacher extends JFrame implements ActionListener{
         tfemail.setBounds(200, 300, 150, 30);
         add(tfemail);
         
-        // JLabel lblx = new JLabel("Class X (%)");
+        // JLabel lblx = new JLabel("SSC");
         // lblx.setBounds(400, 300, 200, 30);
         // lblx.setFont(new Font("serif", Font.BOLD, 20));
         // add(lblx);
@@ -101,7 +101,7 @@ public class AddTeacher extends JFrame implements ActionListener{
         // tfx.setBounds(600, 300, 150, 30);
         // add(tfx);
         
-        // JLabel lblxii = new JLabel("Class XII (%)");
+        // JLabel lblxii = new JLabel("HSC");
         // lblxii.setBounds(50, 350, 200, 30);
         // lblxii.setFont(new Font("serif", Font.BOLD, 20));
         // add(lblxii);
@@ -110,34 +110,34 @@ public class AddTeacher extends JFrame implements ActionListener{
         // tfxii.setBounds(200, 350, 150, 30);
         // add(tfxii);
         
-        JLabel lblaadhar = new JLabel("NID Number");
-        lblaadhar.setBounds(400, 350, 200, 30);
-        lblaadhar.setFont(new Font("serif", Font.BOLD, 20));
-        add(lblaadhar);
+        // JLabel lblnid = new JLabel("NID Number");
+        // lblnid.setBounds(400, 350, 200, 30);
+        // lblnid.setFont(new Font("serif", Font.BOLD, 20));
+        // add(lblnid);
         
-        tfaadhar = new JTextField();
-        tfaadhar.setBounds(600, 350, 150, 30);
-        add(tfaadhar);
+        // tfnid = new JTextField();
+        // tfnid.setBounds(600, 350, 150, 30);
+        // add(tfnid);
         
         JLabel lblcourse = new JLabel("Qualification");
-        lblcourse.setBounds(50, 400, 200, 30);
+        lblcourse.setBounds(50, 350, 200, 30);
         lblcourse.setFont(new Font("serif", Font.BOLD, 20));
         add(lblcourse);
         
-        String course[] = {"B.Tech", "BBA", "BCA", "Bsc", "Msc", "MBA", "MCA", "MCom", "MA", "BA"};
+        String course[] = {"B.Sc", "BBA", "BA", "MSC", "LLM", "MBA"};
         cbcourse = new JComboBox<>(course);
-        cbcourse.setBounds(200, 400, 150, 30);
+        cbcourse.setBounds(200, 350, 150, 30);
         cbcourse.setBackground(Color.WHITE);
         add(cbcourse);
         
         JLabel lblbranch = new JLabel("Department");
-        lblbranch.setBounds(400, 400, 200, 30);
+        lblbranch.setBounds(400, 300, 200, 30);
         lblbranch.setFont(new Font("serif", Font.BOLD, 20));
         add(lblbranch);
         
-        String branch[] = {"Computer Science", "Electronics", "Mechanical", "Civil", "IT"};
+        String branch[] = {"Computer Science", "Textile", "EEE", "Civil", "English","Economics"};
         cbbranch = new JComboBox<>(branch);
-        cbbranch.setBounds(600, 400, 150, 30);
+        cbbranch.setBounds(600, 300, 150, 30);
         cbbranch.setBackground(Color.WHITE);
         add(cbbranch);
         
@@ -164,19 +164,16 @@ public class AddTeacher extends JFrame implements ActionListener{
         if (ae.getSource() == submit) {
             String name = tfname.getText();
             String fname = tffname.getText();
-            String rollno = labelempId.getText();
+            String empid = labelempId.getText();
             String dob = ((JTextField) dcdob.getDateEditor().getUiComponent()).getText();
             String address = tfaddress.getText();
             String phone = tfphone.getText();
             String email = tfemail.getText();
-            String x = tfx.getText();
-            String xii = tfxii.getText();
-            String aadhar = tfaadhar.getText();
-            String course = (String) cbcourse.getSelectedItem();
-            String branch = (String) cbbranch.getSelectedItem();
+            String education = (String) cbcourse.getSelectedItem();
+            String department = (String) cbbranch.getSelectedItem();
             
             try {
-                String query = "insert into teacher values('"+name+"', '"+fname+"', '"+rollno+"', '"+dob+"', '"+address+"', '"+phone+"', '"+email+"', '"+x+"', '"+xii+"', '"+aadhar+"', '"+course+"', '"+branch+"')";
+                String query = "insert into teacher values('"+name+"', '"+fname+"', '"+empid+"', '"+dob+"', '"+address+"', '"+phone+"', '"+email+"', '"+education+"', '"+department+"')";
 
                 Conn con = new Conn();
                 con.s.executeUpdate(query);

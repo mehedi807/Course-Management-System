@@ -10,9 +10,10 @@ public class Login extends JFrame implements ActionListener{
     JTextField tfusername, tfpassword;
     
     Login () {
-        
+        //setSize(1540, 850);
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
+        //setSize(300, 200);
         
         JLabel lblusername = new JLabel("Username");
         lblusername.setBounds(40, 20, 100, 20);

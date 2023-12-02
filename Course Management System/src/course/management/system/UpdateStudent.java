@@ -129,15 +129,15 @@ public class UpdateStudent extends JFrame implements ActionListener{
         labelxii.setFont(new Font("Tahoma", Font.PLAIN, 18));
         add(labelxii);
         
-        JLabel lblaadhar = new JLabel("Aadhar Number");
-        lblaadhar.setBounds(400, 350, 200, 30);
-        lblaadhar.setFont(new Font("serif", Font.BOLD, 20));
-        add(lblaadhar);
+        JLabel lblnid = new JLabel("nid Number");
+        lblnid.setBounds(400, 350, 200, 30);
+        lblnid.setFont(new Font("serif", Font.BOLD, 20));
+        add(lblnid);
         
-        JLabel labelaadhar = new JLabel();
-        labelaadhar.setBounds(600, 350, 150, 30);
-        labelaadhar.setFont(new Font("Tahoma", Font.PLAIN, 18));
-        add(labelaadhar);
+        JLabel labelnid = new JLabel();
+        labelnid.setBounds(600, 350, 150, 30);
+        labelnid.setFont(new Font("Tahoma", Font.PLAIN, 18));
+        add(labelnid);
         
         JLabel lblcourse = new JLabel("Course");
         lblcourse.setBounds(50, 400, 200, 30);
@@ -170,7 +170,7 @@ public class UpdateStudent extends JFrame implements ActionListener{
                 tfemail.setText(rs.getString("email"));
                 labelx.setText(rs.getString("class_x"));
                 labelxii.setText(rs.getString("class_xii"));
-                labelaadhar.setText(rs.getString("aadhar"));
+                labelnid.setText(rs.getString("nid"));
                 labelrollno.setText(rs.getString("rollno"));
                 tfcourse.setText(rs.getString("course"));
                 tfbranch.setText(rs.getString("branch"));
@@ -194,7 +194,7 @@ public class UpdateStudent extends JFrame implements ActionListener{
                         tfemail.setText(rs.getString("email"));
                         labelx.setText(rs.getString("class_x"));
                         labelxii.setText(rs.getString("class_xii"));
-                        labelaadhar.setText(rs.getString("aadhar"));
+                        labelnid.setText(rs.getString("nid"));
                         labelrollno.setText(rs.getString("rollno"));
                         tfcourse.setText(rs.getString("course"));
                         tfbranch.setText(rs.getString("branch"));
