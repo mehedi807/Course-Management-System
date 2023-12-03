@@ -53,10 +53,10 @@ public class TeacherDetails extends JFrame implements ActionListener {
         search.addActionListener(this);
         add(search);
         
-        print = new JButton("Print");
-        print.setBounds(120, 70, 80, 20);
-        print.addActionListener(this);
-        add(print);
+        // print = new JButton("Print");
+        // print.setBounds(120, 70, 80, 20);
+        // print.addActionListener(this);
+        // add(print);
         
         add = new JButton("Add");
         add.setBounds(220, 70, 80, 20);

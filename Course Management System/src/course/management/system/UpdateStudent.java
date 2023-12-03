@@ -109,52 +109,52 @@ public class UpdateStudent extends JFrame implements ActionListener{
         tfemail.setBounds(200, 300, 150, 30);
         add(tfemail);
         
-        JLabel lblx = new JLabel("Class X (%)");
-        lblx.setBounds(400, 300, 200, 30);
-        lblx.setFont(new Font("serif", Font.BOLD, 20));
-        add(lblx);
+        // JLabel lblx = new JLabel("Class X (%)");
+        // lblx.setBounds(400, 300, 200, 30);
+        // lblx.setFont(new Font("serif", Font.BOLD, 20));
+        // add(lblx);
         
-        JLabel labelx = new JLabel();
-        labelx.setBounds(600, 300, 150, 30);
-        labelx.setFont(new Font("Tahoma", Font.PLAIN, 18));
-        add(labelx);
+        // JLabel labelx = new JLabel();
+        // labelx.setBounds(600, 300, 150, 30);
+        // labelx.setFont(new Font("Tahoma", Font.PLAIN, 18));
+        // add(labelx);
         
-        JLabel lblxii = new JLabel("Class XII (%)");
-        lblxii.setBounds(50, 350, 200, 30);
-        lblxii.setFont(new Font("serif", Font.BOLD, 20));
-        add(lblxii);
+        // JLabel lblxii = new JLabel("Class XII (%)");
+        // lblxii.setBounds(50, 350, 200, 30);
+        // lblxii.setFont(new Font("serif", Font.BOLD, 20));
+        // add(lblxii);
         
-        JLabel labelxii = new JLabel();
-        labelxii.setBounds(200, 350, 150, 30);
-        labelxii.setFont(new Font("Tahoma", Font.PLAIN, 18));
-        add(labelxii);
+        // JLabel labelxii = new JLabel();
+        // labelxii.setBounds(200, 350, 150, 30);
+        // labelxii.setFont(new Font("Tahoma", Font.PLAIN, 18));
+        // add(labelxii);
         
-        JLabel lblnid = new JLabel("nid Number");
-        lblnid.setBounds(400, 350, 200, 30);
-        lblnid.setFont(new Font("serif", Font.BOLD, 20));
-        add(lblnid);
+        // JLabel lblnid = new JLabel("nid Number");
+        // lblnid.setBounds(400, 350, 200, 30);
+        // lblnid.setFont(new Font("serif", Font.BOLD, 20));
+        // add(lblnid);
         
-        JLabel labelnid = new JLabel();
-        labelnid.setBounds(600, 350, 150, 30);
-        labelnid.setFont(new Font("Tahoma", Font.PLAIN, 18));
-        add(labelnid);
+        // JLabel labelnid = new JLabel();
+        // labelnid.setBounds(600, 350, 150, 30);
+        // labelnid.setFont(new Font("Tahoma", Font.PLAIN, 18));
+        // add(labelnid);
         
         JLabel lblcourse = new JLabel("Course");
-        lblcourse.setBounds(50, 400, 200, 30);
+        lblcourse.setBounds(50, 350, 200, 30);
         lblcourse.setFont(new Font("serif", Font.BOLD, 20));
         add(lblcourse);
         
         tfcourse = new JTextField();
-        tfcourse.setBounds(200, 400, 150, 30);
+        tfcourse.setBounds(200, 350, 150, 30);
         add(tfcourse);
         
         JLabel lblbranch = new JLabel("Branch");
-        lblbranch.setBounds(400, 400, 200, 30);
+        lblbranch.setBounds(400, 300, 200, 30);
         lblbranch.setFont(new Font("serif", Font.BOLD, 20));
         add(lblbranch);
         
         tfbranch = new JTextField();
-        tfbranch.setBounds(600, 400, 150, 30);
+        tfbranch.setBounds(600, 300, 150, 30);
         add(tfbranch);
         
         try {
@@ -168,9 +168,9 @@ public class UpdateStudent extends JFrame implements ActionListener{
                 tfaddress.setText(rs.getString("address"));
                 tfphone.setText(rs.getString("phone"));
                 tfemail.setText(rs.getString("email"));
-                labelx.setText(rs.getString("class_x"));
-                labelxii.setText(rs.getString("class_xii"));
-                labelnid.setText(rs.getString("nid"));
+                // labelx.setText(rs.getString("class_x"));
+                // labelxii.setText(rs.getString("class_xii"));
+                // labelnid.setText(rs.getString("nid"));
                 labelrollno.setText(rs.getString("rollno"));
                 tfcourse.setText(rs.getString("course"));
                 tfbranch.setText(rs.getString("branch"));
@@ -192,9 +192,9 @@ public class UpdateStudent extends JFrame implements ActionListener{
                         tfaddress.setText(rs.getString("address"));
                         tfphone.setText(rs.getString("phone"));
                         tfemail.setText(rs.getString("email"));
-                        labelx.setText(rs.getString("class_x"));
-                        labelxii.setText(rs.getString("class_xii"));
-                        labelnid.setText(rs.getString("nid"));
+                        // labelx.setText(rs.getString("class_x"));
+                        // labelxii.setText(rs.getString("class_xii"));
+                        // labelnid.setText(rs.getString("nid"));
                         labelrollno.setText(rs.getString("rollno"));
                         tfcourse.setText(rs.getString("course"));
                         tfbranch.setText(rs.getString("branch"));

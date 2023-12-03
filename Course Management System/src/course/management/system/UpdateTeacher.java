@@ -109,35 +109,35 @@ public class UpdateTeacher extends JFrame implements ActionListener{
         tfemail.setBounds(200, 300, 150, 30);
         add(tfemail);
         
-        JLabel lblx = new JLabel("Class X (%)");
-        lblx.setBounds(400, 300, 200, 30);
-        lblx.setFont(new Font("serif", Font.BOLD, 20));
-        add(lblx);
+        // JLabel lblx = new JLabel("Class X (%)");
+        // lblx.setBounds(400, 300, 200, 30);
+        // lblx.setFont(new Font("serif", Font.BOLD, 20));
+        // add(lblx);
         
-        JLabel labelx = new JLabel();
-        labelx.setBounds(600, 300, 150, 30);
-        labelx.setFont(new Font("Tahoma", Font.PLAIN, 18));
-        add(labelx);
+        // JLabel labelx = new JLabel();
+        // labelx.setBounds(600, 300, 150, 30);
+        // labelx.setFont(new Font("Tahoma", Font.PLAIN, 18));
+        // add(labelx);
         
-        JLabel lblxii = new JLabel("Class XII (%)");
-        lblxii.setBounds(50, 350, 200, 30);
-        lblxii.setFont(new Font("serif", Font.BOLD, 20));
-        add(lblxii);
+        // JLabel lblxii = new JLabel("Class XII (%)");
+        // lblxii.setBounds(50, 350, 200, 30);
+        // lblxii.setFont(new Font("serif", Font.BOLD, 20));
+        // add(lblxii);
         
-        JLabel labelxii = new JLabel();
-        labelxii.setBounds(200, 350, 150, 30);
-        labelxii.setFont(new Font("Tahoma", Font.PLAIN, 18));
-        add(labelxii);
+        // JLabel labelxii = new JLabel();
+        // labelxii.setBounds(200, 350, 150, 30);
+        // labelxii.setFont(new Font("Tahoma", Font.PLAIN, 18));
+        // add(labelxii);
         
-        JLabel lblnid = new JLabel("nid Number");
-        lblnid.setBounds(400, 350, 200, 30);
-        lblnid.setFont(new Font("serif", Font.BOLD, 20));
-        add(lblnid);
+        // JLabel lblnid = new JLabel("nid Number");
+        // lblnid.setBounds(400, 350, 200, 30);
+        // lblnid.setFont(new Font("serif", Font.BOLD, 20));
+        // add(lblnid);
         
-        JLabel labelnid = new JLabel();
-        labelnid.setBounds(600, 350, 150, 30);
-        labelnid.setFont(new Font("Tahoma", Font.PLAIN, 18));
-        add(labelnid);
+        // JLabel labelnid = new JLabel();
+        // labelnid.setBounds(600, 350, 150, 30);
+        // labelnid.setFont(new Font("Tahoma", Font.PLAIN, 18));
+        // add(labelnid);
         
         JLabel lblcourse = new JLabel("Education");
         lblcourse.setBounds(50, 400, 200, 30);
@@ -168,9 +168,9 @@ public class UpdateTeacher extends JFrame implements ActionListener{
                 tfaddress.setText(rs.getString("address"));
                 tfphone.setText(rs.getString("phone"));
                 tfemail.setText(rs.getString("email"));
-                labelx.setText(rs.getString("class_x"));
-                labelxii.setText(rs.getString("class_xii"));
-                labelnid.setText(rs.getString("nid"));
+                // labelx.setText(rs.getString("class_x"));
+                // labelxii.setText(rs.getString("class_xii"));
+                // labelnid.setText(rs.getString("nid"));
                 labelEmpId.setText(rs.getString("empId"));
                 tfcourse.setText(rs.getString("education"));
                 tfbranch.setText(rs.getString("department"));
@@ -192,9 +192,9 @@ public class UpdateTeacher extends JFrame implements ActionListener{
                         tfaddress.setText(rs.getString("address"));
                         tfphone.setText(rs.getString("phone"));
                         tfemail.setText(rs.getString("email"));
-                        labelx.setText(rs.getString("class_x"));
-                        labelxii.setText(rs.getString("class_xii"));
-                        labelnid.setText(rs.getString("nid"));
+                        // labelx.setText(rs.getString("class_x"));
+                        // labelxii.setText(rs.getString("class_xii"));
+                        // labelnid.setText(rs.getString("nid"));
                         labelEmpId.setText(rs.getString("empId"));
                         tfcourse.setText(rs.getString("education"));
                         tfbranch.setText(rs.getString("department"));
@@ -238,7 +238,7 @@ public class UpdateTeacher extends JFrame implements ActionListener{
                 Conn con = new Conn();
                 con.s.executeUpdate(query);
                 
-                JOptionPane.showMessageDialog(null, "Student Details Updated Successfully");
+                JOptionPane.showMessageDialog(null, "Details Updated Successfully");
                 setVisible(false);
             } catch (Exception e) {
                 e.printStackTrace();
